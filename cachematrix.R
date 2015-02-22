@@ -12,7 +12,7 @@
 ## and use that. Whenever the input matrix is changed with cm$set, inverse value is again set
 ## to null and will be recalculated in the following function.
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix(c(1:4),2,2)) {
   i <- NULL
   set <- function(y) {
     x <<- y
